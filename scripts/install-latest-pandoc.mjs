@@ -19,7 +19,8 @@ if (metadata.draft || metadata.prerelease || typeof metadata.tag_name !== "strin
 
 const assetName = `pandoc-${metadata.tag_name}-1-amd64.deb`;
 const asset = metadata.assets?.find(
-	(candidate) => candidate?.name === assetName && typeof candidate.browser_download_url === "string",
+	(candidate) =>
+		candidate?.name === assetName && typeof candidate.browser_download_url === "string",
 );
 if (!asset) throw new Error(`Could not find Pandoc asset ${assetName}`);
 
