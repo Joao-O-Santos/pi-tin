@@ -72,7 +72,9 @@ for (const path of trackedMarkdown()) {
 }
 
 if (failures.length) {
-	console.error(`Markdown prose exceeds ${WIDTH} characters (line:length):\n${failures.join("\n")}`);
+	console.error(
+		`Markdown prose exceeds ${WIDTH} characters (line:length):\n${failures.join("\n")}`,
+	);
 	process.exitCode = 1;
 } else if (write) {
 	console.log(`Formatted Markdown to ${WIDTH} columns.`);
