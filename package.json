@@ -1,0 +1,55 @@
+{
+	"name": "pi-tin",
+	"version": "0.0.0",
+	"private": true,
+	"description": "Reusable scaffold for small J's Pi Bakery projects",
+	"type": "module",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://gitlab.com/Joao-O-Santos/pi-tin.git"
+	},
+	"bugs": {
+		"url": "https://gitlab.com/Joao-O-Santos/pi-tin/-/issues"
+	},
+	"homepage": "https://gitlab.com/Joao-O-Santos/pi-tin",
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [
+		"src",
+		"README.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"test": "node --import tsx --test test/*.test.ts",
+		"typecheck": "tsc --noEmit",
+		"lint": "biome lint .",
+		"format:check": "biome ci --linter-enabled=false --assist-enabled=false .",
+		"format:fix": "biome check --write .",
+		"markdown:check": "node scripts/format-markdown.mjs",
+		"markdown:fix": "node scripts/format-markdown.mjs --write",
+		"style": "npm run lint && npm run format:check && npm run markdown:check",
+		"check": "npm run typecheck && npm run style && npm test",
+		"site": "make site"
+	},
+	"pi": {
+		"extensions": ["./src/index.ts"]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-ai": "*",
+		"@earendil-works/pi-coding-agent": "*",
+		"@earendil-works/pi-tui": "*",
+		"typebox": "*"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "latest",
+		"@earendil-works/pi-ai": "latest",
+		"@earendil-works/pi-coding-agent": "latest",
+		"@earendil-works/pi-tui": "latest",
+		"@types/node": "latest",
+		"tsx": "latest",
+		"typebox": "latest",
+		"typescript": "latest"
+	}
+}
