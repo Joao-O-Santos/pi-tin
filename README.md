@@ -1,5 +1,14 @@
 # pi-tin
 
+<p align="center">
+  <img src="https://gitlab.com/Joao-O-Santos/pi-tin/-/raw/main/logo.png" alt="pi-tin logo" width="240">
+</p>
+
+[![pipeline
+status](https://gitlab.com/Joao-O-Santos/pi-tin/badges/main/pipeline.svg)](https://gitlab.com/Joao-O-Santos/pi-tin/-/commits/main)
+[![license](https://img.shields.io/npm/l/pi-tin.svg)](https://gitlab.com/Joao-O-Santos/pi-tin/-/blob/main/LICENSE)
+
+
 A small reusable mould for J's Pi Bakery projects.
 
 `pi-tin` is a repository template, not a runtime dependency. It keeps
