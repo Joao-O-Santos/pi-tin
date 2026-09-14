@@ -9,13 +9,13 @@
 		},
 		{
 			"path": "ARCHITECTURE.md",
-			"fingerprint": "sha256:841fbd945d0b6dbff4dd307a4d4df644c917627e41387154052e5d5874e06eca",
+			"fingerprint": "sha256:cb24ebc9d4e6361dd39e0bb4d444fca3859aecbcc10008d11dc791d39dd5202e",
 			"status": "current",
 			"role": "architecture"
 		},
 		{
 			"path": "README.md",
-			"fingerprint": "sha256:4a5def8d62086dab28df81a6fccbc72abeb6471099d76701e39bef55b32b8713",
+			"fingerprint": "sha256:d97c8158e2449512fb6ac37cb9abcca5fdd29740f70464212cb1b801e01cbd05",
 			"status": "current",
 			"role": "documentation"
 		},
@@ -33,7 +33,7 @@
 		},
 		{
 			"path": "CHANGELOG.md",
-			"fingerprint": "sha256:e5621910f32735b293c6ff3abd4eddf700835d8aa78ef634bebb38a44fc705b6",
+			"fingerprint": "sha256:f533aaff01a5f0accf6c85f9e01c16784466e2fab8350adc4d4770b8ec44a7de",
 			"status": "current",
 			"role": "changelog"
 		}

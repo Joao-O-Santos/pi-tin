@@ -22,6 +22,10 @@ Dependencies deliberately follow current upstream releases.
 `package-lock.json` is disabled so verification exercises the current
 dependency graph.
 
+The CI workflows install the current Pandoc release with
+`scripts/install-latest-pandoc.mjs`. The installer uses `dpkg` directly
+when running as root and `sudo dpkg` on non-root runners.
+
 ## Documentation
 
 GNU Make assembles the root Markdown documents into `public/` using

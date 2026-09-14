@@ -6,7 +6,7 @@
 
 [![pipeline
 status](https://gitlab.com/Joao-O-Santos/pi-tin/badges/main/pipeline.svg)](https://gitlab.com/Joao-O-Santos/pi-tin/-/commits/main)
-[![license](https://img.shields.io/npm/l/pi-tin.svg)](https://gitlab.com/Joao-O-Santos/pi-tin/-/blob/main/LICENSE)
+[![license](https://img.shields.io/gitlab/license/Joao-O-Santos%2Fpi-tin)](https://gitlab.com/Joao-O-Santos/pi-tin/-/commits/main)
 
 
 A small reusable mould for J's Pi Bakery projects.
@@ -49,6 +49,7 @@ not publish releases or npm packages.
 -   A small make-it-stop-style documentation site.
 -   GitLab CI for verification, Pages, and optional npm publishing.
 -   GitHub Actions for verification and Pages only.
+-   CI installs the current Pandoc release automatically.
 
 ## Project files
 
@@ -65,5 +66,11 @@ npm install
 make verify
 make site
 ```
+
+Pandoc must be available on `PATH` for local verification and site
+builds.
+The CI workflows install the current release with
+`scripts/install-latest-pandoc.mjs`; local development should install
+Pandoc through the operating system's package manager.
 
 The generated site is written to `public/` and is ignored by Git.
