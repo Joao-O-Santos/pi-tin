@@ -29,4 +29,5 @@ if (!download.ok) throw new Error(`Pandoc download failed with HTTP ${download.s
 
 const path = "/tmp/pandoc.deb";
 await writeFile(path, Buffer.from(await download.arrayBuffer()));
-execFileSync("dpkg", ["--install", path], { stdio: "inherit" });
+const dpkg = process.getuid?.() === 0 ? ["dpkg"] : ["sudo", "dpkg"];
+execFileSync(dpkg[0], [...dpkg.slice(1), "--install", path], { stdio: "inherit" });
