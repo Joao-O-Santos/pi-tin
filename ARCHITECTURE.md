@@ -32,6 +32,16 @@ while keeping the template specific implementation small.
 The site publishes the same generated `public/` directory on both GitLab
 Pages and GitHub Pages.
 
+## Model-facing tool convention
+
+Copied packages stay independently installable and explain their own
+tools, so no supervisor skill is ever required merely to call them.
+Schema owns invocation mechanics; description owns capability and
+boundaries; `promptSnippet` owns compact discoverability;
+`promptGuidelines` own stable non-mechanical usage principles. Errors
+and results should guide recovery truthfully. Test important
+model-facing commitments rather than trusting prose alone.
+
 ## CI and release boundary
 
 GitLab CI is authoritative. It verifies every pipeline, publishes GitLab
